@@ -1,4 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/tailwindcss']
+    modules: ['@nuxtjs/tailwindcss', ['@nuxtjs/google-fonts', {
+        families: {
+            'Crimson Text': {
+                wght: [400, 600, 700],
+                ital: [400, 600, 700]
+            },
+        },
+    }]],
 })

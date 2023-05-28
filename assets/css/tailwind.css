@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-base;
+  }
+
+  *:focus {
+    @apply outline-primary+2;
+  }
+
+  body {
+    @apply font-body;
+  }
+
+  a,
+  a:visited {
+    @apply text-primary underline;
+
+    &:hover {
+      @apply text-primary+2;
+    }
+  }
+
+  h1,
+  .h1 {
+    @apply text-4xl font-semibold italic;
+  }
+
+  h2,
+  .h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3,
+  .h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  h4,
+  .h4 {
+    @apply text-xl italic;
+  }
+}
+
+@layer components {
+  .button,
+  a.button {
+    @apply h-40 inline-flex items-center px-16  bg-primary text-neutral-light no-underline rounded font-bold capitalize hover:text-neutral-light hover:bg-primary+1 active:bg-primary+2;
+
+    &.button-lg {
+      @apply bg-neutral-light h-56 text-primary text-lg px-24 hover:bg-primary-2 active:bg-primary-1 active:text-primary+2;
+    }
+  }
+}
