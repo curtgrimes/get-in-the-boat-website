@@ -26,7 +26,8 @@ export default <Partial<Config>>{
             '48': '2.6667rem',
             '56': '3.1111rem',
             '80': '4.4444rem',
-            '120': '6.6667rem'
+            '120': '6.6667rem',
+            'text-gutter': '2.6667rem' // 48px
         },
         screens: {
             'sm': '640px',

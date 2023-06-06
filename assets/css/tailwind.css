@@ -43,12 +43,20 @@
   .h4 {
     @apply text-xl italic;
   }
+
+  p:not(:last-child) {
+    @apply mb-24;
+  }
+
+  ::selection {
+    @apply bg-primary-1;
+  }
 }
 
 @layer components {
   .button,
   a.button {
-    @apply py-8 inline-flex items-center px-16  bg-primary text-neutral-light no-underline rounded font-bold capitalize hover:text-neutral-light hover:bg-primary+1 active:bg-primary+2;
+    @apply py-8 inline-flex items-center px-16  bg-primary text-neutral-light no-underline rounded font-bold capitalize hover:text-neutral-light hover:bg-primary+1 active:bg-primary+2 focus-visible:bg-primary+1;
 
     &.button-lg {
       @apply bg-neutral-light py-12 text-primary text-lg px-24 hover:bg-primary-2 active:bg-primary-1 active:text-primary+2;

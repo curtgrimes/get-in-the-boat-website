@@ -1,6 +1,6 @@
 <template>
   <div class="py-38">
-    <nav class="max-w-screen-xl mx-auto px-48">
+    <nav class="max-w-screen-xl mx-auto px-text-gutter">
       <ul class="flex gap-32">
         <li>
           <NuxtLink

@@ -1,6 +1,6 @@
 <template>
   <section class="text-neutral-light pb-80">
-    <div class="max-w-screen-xl mx-auto px-48">
+    <div class="max-w-screen-xl mx-auto px-text-gutter">
       <div class="flex items-end">
         <div>
           <h1>Get in the Boat</h1>
@@ -13,7 +13,7 @@
             <div class="note">Available September 1, 2023</div>
           </div>
         </div>
-        <img src="~/assets/img/book.png" class="mb-[-200px]" />
+        <img src="~/assets/img/book.png" class="mb-[-200px] w-2/5" />
       </div>
     </div>
   </section>
