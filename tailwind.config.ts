@@ -30,6 +30,7 @@ export default <Partial<Config>>{
       "text-gutter": "2.6667rem", // 48px
     },
     screens: {
+      xs: '375px',
       sm: "640px",
       md: "768px",
       lg: "1024px",
