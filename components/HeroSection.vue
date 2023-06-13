@@ -1,10 +1,10 @@
 <template>
-  <section class="text-neutral-light pb-80">
-    <div class="max-w-screen-xl mx-auto px-text-gutter">
+  <section class="pb-80 text-neutral-light">
+    <div class="mx-auto max-w-screen-xl px-text-gutter">
       <div class="flex items-end">
         <div>
           <h1>Get in the Boat</h1>
-          <p class="mb-80 h4 leading-[42px] w-4/5">
+          <p class="h4 mb-80 w-4/5 leading-[42px]">
             A story of resilience in the face of life's most difficult
             encounters.
           </p>
@@ -21,6 +21,6 @@
 
 <style type="css" scoped>
 .note {
-  @apply bg-primary+2 rounded-full px-16 py-8 text-sm;
+  @apply rounded-full bg-primary+2 px-16 py-8 text-sm;
 }
 </style>

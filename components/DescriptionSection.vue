@@ -1,6 +1,6 @@
 <template>
   <section class="py-120">
-    <div class="px-text-gutter max-w-screen-xl mx-auto flex gap-x-48 items-end">
+    <div class="mx-auto flex max-w-screen-xl items-end gap-x-48 px-text-gutter">
       <div class="w-3/5 pr-[90px]">
         <p class="text-lg">
           In "Get In The Boat", Darlene Fuchs shares the powerful and poignant

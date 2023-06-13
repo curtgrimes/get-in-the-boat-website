@@ -20,10 +20,10 @@ defineProps<{
   <div
     :class="
       twMerge(
-        'overflow-hidden relative',
+        'relative overflow-hidden',
         showContinueReadingButton
           ? 'max-h-[45rem] md:w-[55%]'
-          : 'md:max-w-lg mx-auto'
+          : 'mx-auto md:max-w-lg'
       )
     "
   >
@@ -43,7 +43,7 @@ defineProps<{
         </em>
       </p>
       <p
-        class="first-letter:text-4xl first-letter:float-left first-letter:w-[50px] first-letter:leading-[90px] first-letter:pr-12"
+        class="first-letter:float-left first-letter:w-[50px] first-letter:pr-12 first-letter:text-4xl first-letter:leading-[90px]"
       >
         I stood quiet by her bedside, dim morning shadows playing at her
         eyelashes and the gentle lines of her face. Whispered soft breaths
@@ -73,7 +73,7 @@ defineProps<{
     </div>
     <div
       v-if="showContinueReadingButton"
-      class="bg-gradient-to-t from-primary-2 from-20% absolute bottom-0 inset-x-0 h-[150px] flex items-end"
+      class="absolute inset-x-0 bottom-0 flex h-[150px] items-end bg-gradient-to-t from-primary-2 from-20%"
     >
       <NuxtLink class="button" to="/excerpt">Continue Reading</NuxtLink>
     </div>
@@ -378,7 +378,7 @@ defineProps<{
       boat with Gail, sailing against whatever unseen currents. Come what may,
       and with God’s help, I would see us to the other shore.
     </p>
-    <aside class="text-center mt-24">
+    <aside class="mt-24 text-center">
       “My frame was not hidden from you when I was made in the secret place,
       when I was woven together in the depths of the earth. Your eyes saw my
       unformed body; all the days ordained for me were written in your book

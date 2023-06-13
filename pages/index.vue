@@ -2,9 +2,9 @@
 
 <template>
   <div>
-    <div class="relative bg-primary z-0">
+    <div class="relative z-0 bg-primary">
       <img
-        class="absolute -z-10 object-cover w-full h-full mix-blend-luminosity opacity-25"
+        class="absolute -z-10 h-full w-full object-cover opacity-25 mix-blend-luminosity"
         src="~/assets/img/hero-bg.jpg"
       />
       <Navbar />

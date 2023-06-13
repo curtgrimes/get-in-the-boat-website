@@ -1,10 +1,10 @@
 <template>
   <div class="py-38">
-    <nav class="max-w-screen-xl mx-auto px-text-gutter">
+    <nav class="mx-auto max-w-screen-xl px-text-gutter">
       <ul class="flex gap-32">
         <li>
           <NuxtLink
-            class="no-underline font-bold text-neutral-light"
+            class="font-bold text-neutral-light no-underline"
             to="#about"
           >
             About the Book
@@ -12,7 +12,7 @@
         </li>
         <li>
           <NuxtLink
-            class="no-underline font-bold text-neutral-light"
+            class="font-bold text-neutral-light no-underline"
             to="#excerpt"
           >
             Read an Excerpt
@@ -20,7 +20,7 @@
         </li>
         <li>
           <NuxtLink
-            class="no-underline font-bold text-neutral-light"
+            class="font-bold text-neutral-light no-underline"
             to="#formats"
           >
             Available Formats
@@ -28,7 +28,7 @@
         </li>
         <li>
           <NuxtLink
-            class="no-underline font-bold text-neutral-light"
+            class="font-bold text-neutral-light no-underline"
             to="#author"
           >
             About the Author
