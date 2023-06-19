@@ -8,10 +8,11 @@
         src="~/assets/img/hero-bg.jpg"
       />
       <Navbar />
-      <HeroSection />
+      <SectionHero />
     </div>
-    <DescriptionSection />
-    <ExcerptSection />
+    <SectionDescription />
+    <SectionExcerpt />
+    <SectionFormats />
     <NuxtPage />
   </div>
 </template>
