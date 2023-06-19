@@ -1,6 +1,6 @@
 <template>
-  <section class="py-120">
-    <div class="mx-auto flex max-w-screen-xl items-end gap-x-48 px-text-gutter">
+  <SectionWrapper>
+    <div class="flex items-end gap-x-48">
       <div class="w-3/5 pr-[90px]">
         <p class="text-lg">
           In "Get In The Boat", Darlene Fuchs shares the powerful and poignant
@@ -26,5 +26,5 @@
       </div>
       <NewsletterSignUp />
     </div>
-  </section>
+  </SectionWrapper>
 </template>
