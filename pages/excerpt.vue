@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 const { back } = useRouter();
 
-const titleIsVisible = ref(false);
+const titleIsVisible = ref(true);
 
 onKeyStroke("Escape", () => {
   back();
@@ -24,7 +24,7 @@ onKeyStroke("Escape", () => {
       <span
         :class="
           twMerge(
-            'flex shrink flex-col items-end gap-x-[4px] text-right text-sm leading-4 transition-all duration-150 xs:flex-row xs:items-center',
+            'flex shrink flex-col items-end gap-x-[4px] text-right text-sm leading-4 opacity-0 transition-all duration-150 xs:flex-row xs:items-center',
             titleIsVisible ? 'translate-y-16 opacity-0' : 'opacity-100'
           )
         "

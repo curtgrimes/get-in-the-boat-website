@@ -9,7 +9,9 @@ const emit = defineEmits<{
 const titleVisibilityHandle = ref(null);
 const titleIsVisible = useElementVisibility(titleVisibilityHandle);
 
-watchEffect(() => emit("titleVisibilityChange", titleIsVisible.value));
+watch(titleIsVisible, () =>
+  emit("titleVisibilityChange", titleIsVisible.value)
+);
 
 defineProps<{
   showContinueReadingButton?: boolean;
