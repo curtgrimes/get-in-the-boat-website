@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import useNavbarAnchors from "../composables/useNavbarAnchors";
+const navbarAnchors = useNavbarAnchors();
+</script>
 
 <template>
   <div>
@@ -10,9 +13,9 @@
       <Navbar />
       <SectionHero />
     </div>
-    <SectionAbout id="about" />
-    <SectionExcerpt id="excerpt" />
-    <SectionFormats id="formats" />
+    <SectionAbout :id="navbarAnchors.About" />
+    <SectionExcerpt :id="navbarAnchors.Excerpt" />
+    <SectionFormats :id="navbarAnchors.Formats" />
     <NuxtPage />
   </div>
 </template>
