@@ -28,7 +28,7 @@ defineProps<{
     "
   >
     <h2 class="h4" v-if="showContinueReadingButton">Read an excerpt...</h2>
-    <div style="view-transition-name: excerpt">
+    <div>
       <div ref="titleVisibilityHandle"></div>
 
       <p class="h2 mb-0">Chapter One</p>
