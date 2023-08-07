@@ -15,7 +15,7 @@
         <p class="text-lg">
           A woman who has lived for more than six decades, Darlene's life has
           been marked by various experiences, including ups and downs, twists,
-          and turns. She has been married to her soulmate for over 50 years and
+          and turns. She has been married to her soulmate for over 40 years and
           has authored a memoir titled "Get In The Boat," which chronicles the
           heart-wrenching dementia journey of her parents, Richard and Gail, who
           complemented each other perfectly.

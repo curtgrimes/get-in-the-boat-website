@@ -9,9 +9,10 @@
           Gail during her decline into dementia.
         </p>
         <p>
-          This memoir is a heart-wrenching yet inspiring exploration of the
-          enduring power of love, faith, and resilience in the face of life's
-          most difficult challenges.
+          This memoir, based on the journals of Richard Sonnichsen, is a
+          heart-wrenching yet inspiring exploration of the enduring power of
+          love, faith, and resilience in the face of life's most difficult
+          challenges.
         </p>
         <p>
           Through Richard's journey, Darlene offers valuable insights into the
