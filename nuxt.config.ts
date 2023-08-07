@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-icon",
     "floating-vue/nuxt",
+    "nuxt-gtag",
     [
       "@nuxtjs/google-fonts",
       {
@@ -21,13 +22,16 @@ export default defineNuxtConfig({
   // See https://answers.netlify.com/t/javascript-heap-out-of-memory-when-trying-to-build-a-nuxt-app/93138/14
   postcss: {
     plugins: {
-      'tailwindcss/nesting': {},
+      "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
       cssnano:
-        process.env.NODE_ENV === 'production'
-          ? { preset: ['default', { discardComments: { removeAll: true } }] }
+        process.env.NODE_ENV === "production"
+          ? { preset: ["default", { discardComments: { removeAll: true } }] }
           : false, // disable cssnano when not in production
-     },
-  }
+    },
+  },
+  gtag: {
+    id: "G-LGLGLQ1KF9",
+  },
 });
