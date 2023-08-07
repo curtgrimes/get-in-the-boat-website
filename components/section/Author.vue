@@ -1,12 +1,18 @@
 <template>
   <div>
-    <img src="~/assets/img/darlene.jpg" class="md:hidden w-full" alt="" />
+    <img
+      src="~/assets/img/darlene.jpg"
+      class="md:hidden w-full"
+      loading="lazy"
+      alt=""
+    />
     <SectionWrapper class="bg-primary-2 py-80">
       <div class="mx-auto">
         <img
           src="~/assets/img/darlene-circle.jpg"
           class="border-b border-b-primary-1 rounded-full shadow-xl max-w-xs float-right ml-48 mb-48 hidden md:block"
           style="shape-outside: circle()"
+          loading="lazy"
           alt=""
         />
         <h2 class="h4 font-normal">About the Author</h2>

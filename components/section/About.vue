@@ -31,9 +31,9 @@
     <div
       class="flex [&>*]:min-w-0 gap-12 [&>*]:object-cover mt-80 -mx-32 md:mx-0 flex-col sm:flex-row"
     >
-      <img src="~/assets/img/photo-1.jpg" alt="" />
-      <img src="~/assets/img/photo-3.jpg" alt="" />
-      <img src="~/assets/img/photo-2.jpg" alt="" />
+      <img src="~/assets/img/photo-1.jpg" loading="lazy" alt="" />
+      <img src="~/assets/img/photo-3.jpg" loading="lazy" alt="" />
+      <img src="~/assets/img/photo-2.jpg" loading="lazy" alt="" />
     </div>
   </SectionWrapper>
 </template>
