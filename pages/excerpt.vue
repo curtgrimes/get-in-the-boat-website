@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { twMerge } from "tailwind-merge";
+
+useHead({
+  title: "Excerpt",
+});
+
 const titleIsVisible = ref(true);
 
 const { back } = useRouter();

@@ -12,16 +12,6 @@ withDefaults(
   }
 );
 
-// :class="
-//   twMerge(
-//     'flex gap-16 text-lg [&_a]:flex [&_a]:justify-center [&_a]:items-center [&_a]:p-[2px]',
-//     variant === 'light' &&
-//       '[&_a]:text-neutral-light [&_a:hover]:text-neutral-light',
-//     variant === 'dark' &&
-//       '[&_a]:text-neutral-dark [&_a:hover]:text-neutral-dark'
-//   )
-// "
-
 const links = [
   ["About the Book", navbarAnchors.About],
   ["Read an Excerpt", navbarAnchors.Excerpt],
@@ -36,7 +26,7 @@ const links = [
   >
     <li v-for="[linkText, anchor] in links">
       <NuxtLink
-        :to="`#${anchor}`"
+        :to="{ path: '/',hash:`#${anchor}`}"
         :class="
           twMerge(
             'font-bold no-underline',
@@ -45,8 +35,9 @@ const links = [
             variant === 'dark' && '!text-neutral-dark !visited:text-neutral-dark !hover:text-neutral-dark'
           )
         "
-        >{{ linkText }}</NuxtLink
-      >
+        >
+        {{ linkText }}
+      </NuxtLink>
     </li>
   </ul>
 </template>

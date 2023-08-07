@@ -5,7 +5,11 @@ import type { RouterConfig } from '@nuxt/schema';
 
 export default <RouterConfig>{
     async scrollBehavior(to, from, savedPosition) {
-        await new Promise(resolve => setTimeout(resolve, 250));
+          if (to.path !== from.path && process.client) {
+    window.scrollTo(0, 0)
+          }
+        
+        await new Promise(resolve => setTimeout(resolve, 200));
 
         if (to.hash) {
             const element = document.getElementById(to.hash.substring(1))
