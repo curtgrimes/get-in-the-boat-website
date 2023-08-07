@@ -19,12 +19,16 @@
         <p class="h2">Darlene Fuchs</p>
         <SocialLinks :show-full-email="true" class="my-24 text-xl" />
         <p class="text-lg">
-          A woman who has lived for more than six decades, Darlene's life has
-          been marked by various experiences, including ups and downs, twists,
-          and turns. She has been married to her soulmate for over 40 years and
-          has authored a memoir titled "Get In The Boat," which chronicles the
-          heart-wrenching dementia journey of her parents, Richard and Gail, who
-          complemented each other perfectly.
+          Having lived more than six decades, Darlene's life has been marked by
+          various experiences, including ups and downs, twists, and turns. She
+          has been married to her soulmate for over 40 years and has authored a
+          memoir titled "Get In The Boat," fulfilling a final promise to her
+          father, Richard, made during the challenging battle with dementia that
+          affected both her parents. Through the pages of this book, Darlene
+          honors her parents' enduring love, documents their struggles with
+          dementia, and shares the invaluable lessons they learned along the
+          way. It serves as a tribute to their memory and a source of
+          inspiration for others facing similar challenges in their lives.
         </p>
 
         <p>
