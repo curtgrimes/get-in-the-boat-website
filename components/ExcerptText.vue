@@ -10,7 +10,7 @@ const titleVisibilityHandle = ref(null);
 const titleIsVisible = useElementVisibility(titleVisibilityHandle);
 
 watch(titleIsVisible, () =>
-  emit("titleVisibilityChange", titleIsVisible.value)
+  emit("titleVisibilityChange", titleIsVisible.value),
 );
 
 defineProps<{
@@ -25,17 +25,20 @@ defineProps<{
         'relative overflow-hidden',
         showContinueReadingButton
           ? 'max-h-[45rem] md:w-[70%]'
-          : 'mx-auto md:max-w-lg'
+          : 'mx-auto md:max-w-lg',
       )
     "
   >
-    <h2 class="h4 font-normal" v-if="showContinueReadingButton">
+    <h2
+      class="h4 text-base md:text-xl font-normal"
+      v-if="showContinueReadingButton"
+    >
       Read an excerpt
     </h2>
     <div>
       <div ref="titleVisibilityHandle"></div>
 
-      <p class="h3 md:h2 md:my-8 mb-0">Chapter One</p>
+      <p class="h3 md:h2 md:my-8 -mb-4 md:mb-0">Chapter One</p>
 
       <p class="h4 md:h3">A New Normal</p>
       <p>
