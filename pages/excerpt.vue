@@ -29,7 +29,7 @@ onKeyStroke("Escape", () => {
         :class="
           twMerge(
             'flex shrink flex-col items-end gap-x-[4px] text-right text-sm leading-4 opacity-0 transition-all duration-150 xs:flex-row xs:items-center',
-            titleIsVisible ? 'translate-y-16 opacity-0' : 'opacity-100'
+            titleIsVisible ? 'translate-y-16 opacity-0' : 'opacity-100',
           )
         "
       >

@@ -3,10 +3,10 @@
  * spots these anchors are used across the website.
  */
 export default function () {
-    return {
-        About: "about",
-        Excerpt: "excerpt",
-        Formats: "formats",
-        Author: "author",
-    } as const
+  return {
+    About: "about",
+    Excerpt: "excerpt",
+    Formats: "formats",
+    Author: "author",
+  } as const;
 }

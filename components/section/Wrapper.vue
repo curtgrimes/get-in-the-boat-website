@@ -10,7 +10,7 @@ withDefaults(
   }>(),
   {
     withTextGutter: () => true,
-  }
+  },
 );
 </script>
 
@@ -20,7 +20,7 @@ withDefaults(
       :class="
         twMerge(
           'mx-auto max-w-screen-xl',
-          $props.withTextGutter && 'px-text-gutter'
+          $props.withTextGutter && 'px-text-gutter',
         )
       "
     >

@@ -9,7 +9,7 @@ withDefaults(
   }>(),
   {
     variant: "light",
-  }
+  },
 );
 
 const links = [
@@ -26,16 +26,17 @@ const links = [
   >
     <li v-for="[linkText, anchor] in links">
       <NuxtLink
-        :to="{ path: '/',hash:`#${anchor}`}"
+        :to="{ path: '/', hash: `#${anchor}` }"
         :class="
           twMerge(
             'font-bold no-underline',
             variant === 'light' &&
               '!text-neutral-light !visited:text-neutral-light !hover:text-neutral-light',
-            variant === 'dark' && '!text-neutral-dark !visited:text-neutral-dark !hover:text-neutral-dark'
+            variant === 'dark' &&
+              '!text-neutral-dark !visited:text-neutral-dark !hover:text-neutral-dark',
           )
         "
-        >
+      >
         {{ linkText }}
       </NuxtLink>
     </li>

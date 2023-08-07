@@ -5,7 +5,7 @@ withDefaults(
   }>(),
   {
     showFullEmail: () => false,
-  }
+  },
 );
 </script>
 
