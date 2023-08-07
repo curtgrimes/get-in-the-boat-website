@@ -41,8 +41,8 @@ const links = [
           twMerge(
             'font-bold no-underline',
             variant === 'light' &&
-              'text-neutral-light visited:text-neutral-light',
-            variant === 'dark' && 'text-neutral-dark visited:text-neutral-dark'
+              '!text-neutral-light !visited:text-neutral-light !hover:text-neutral-light',
+            variant === 'dark' && '!text-neutral-dark !visited:text-neutral-dark !hover:text-neutral-dark'
           )
         "
         >{{ linkText }}</NuxtLink
