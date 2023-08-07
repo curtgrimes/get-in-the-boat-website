@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { twMerge } from "tailwind-merge";
+const titleIsVisible = ref(true);
 
 const { back } = useRouter();
-
-const titleIsVisible = ref(true);
 
 onKeyStroke("Escape", () => {
   back();
@@ -11,9 +10,9 @@ onKeyStroke("Escape", () => {
 </script>
 
 <template>
-  <div class="bg-primary-1 px-12 pb-40 text-neutral-dark sm:px-text-gutter">
+  <div class="bg-primary-2 px-12 pb-40 text-neutral-dark sm:px-text-gutter">
     <div
-      class="sticky top-0 z-10 mx-auto mb-12 flex items-center justify-between border-b border-primary bg-primary-1 pb-16 pt-16 md:mb-48 md:max-w-lg md:pt-40"
+      class="sticky top-0 z-10 mx-auto mb-24 flex items-center justify-between border-b border-primary bg-primary-2 pb-16 pt-16 md:mb-48 md:max-w-lg md:pt-40"
     >
       <NuxtLink
         to="/#excerpt"

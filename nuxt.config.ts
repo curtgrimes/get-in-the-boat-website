@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "@vueuse/nuxt",
-    'nuxt-icon',
+    "nuxt-icon",
+    "floating-vue/nuxt",
     [
       "@nuxtjs/google-fonts",
       {

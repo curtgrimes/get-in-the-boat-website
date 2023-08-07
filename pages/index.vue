@@ -16,6 +16,8 @@ const navbarAnchors = useNavbarAnchors();
     <SectionAbout :id="navbarAnchors.About" />
     <SectionExcerpt :id="navbarAnchors.Excerpt" />
     <SectionFormats :id="navbarAnchors.Formats" />
+    <SectionAuthor :id="navbarAnchors.Author" />
+    <Footer />
     <NuxtPage />
   </div>
 </template>

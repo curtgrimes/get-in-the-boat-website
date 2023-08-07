@@ -59,7 +59,11 @@
     @apply inline-flex cursor-pointer items-center rounded  bg-primary px-16 py-8 font-bold capitalize text-neutral-light no-underline hover:bg-primary+1 hover:text-neutral-light focus-visible:bg-primary+1 active:bg-primary+2;
 
     &.button-lg {
-      @apply bg-neutral-light px-24 py-12 text-lg text-primary hover:bg-primary-2 active:bg-primary-1 active:text-primary+2;
+      @apply px-24 py-12 text-lg;
+    }
+
+    &.button-neutral-light {
+      @apply bg-neutral-light text-primary hover:bg-primary-2 active:bg-primary-1 active:text-primary+2;
     }
   }
 }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  themeColor: "#dcd5de",
+  themeColor: "#eceaf4",
 });
 </script>
 

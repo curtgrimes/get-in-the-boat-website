@@ -15,7 +15,7 @@ withDefaults(
 </script>
 
 <template>
-  <section :class="twMerge('py-120', ($attrs.class || '') as string)">
+  <section :class="twMerge('md:py-120 py-56', ($attrs.class || '') as string)">
     <div
       :class="
         twMerge(

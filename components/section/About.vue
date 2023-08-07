@@ -1,7 +1,8 @@
 <template>
   <SectionWrapper>
-    <div class="flex items-end gap-x-48">
-      <div class="w-3/5 pr-[90px]">
+    <div class="flex items-end gap-x-48 mt-120 md:mt-0">
+      <div class="md:w-4/5">
+        <!-- md:w-3/5 md:pr-[90px] -->
         <p class="text-lg">
           In "Get In The Boat", Darlene Fuchs shares the powerful and poignant
           story of her father Richard's experience as a caregiver to his wife
@@ -24,7 +25,14 @@
           of the human spirit.
         </p>
       </div>
-      <NewsletterSignUp />
+      <!-- <NewsletterSignUp /> -->
+    </div>
+    <div
+      class="flex [&>*]:min-w-0 gap-12 [&>*]:object-cover mt-80 -mx-32 md:mx-0 flex-col sm:flex-row"
+    >
+      <img src="~/assets/img/photo-1.jpg" alt="" />
+      <img src="~/assets/img/photo-3.jpg" alt="" />
+      <img src="~/assets/img/photo-2.jpg" alt="" />
     </div>
   </SectionWrapper>
 </template>
