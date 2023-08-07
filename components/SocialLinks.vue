@@ -27,6 +27,18 @@ withDefaults(
     </VTooltip>
     <VTooltip>
       <a
+        href="https://twitter.com/Darlenethefox"
+        alt="Get in the Boat on Twitter"
+        target="_blank"
+      >
+        <Icon name="bi:twitter" />
+      </a>
+      <template #popper>
+        <span class="italic">Get in the Boat</span> on Twitter
+      </template>
+    </VTooltip>
+    <VTooltip>
+      <a
         href="https://www.linkedin.com/in/darlene-fuchs-46aa7447/"
         alt="Get in the Boat on LinkedIn"
         target="_blank"
@@ -37,6 +49,7 @@ withDefaults(
         <span class="italic">Get in the Boat</span> on LinkedIn
       </template>
     </VTooltip>
+
     <VTooltip>
       <a
         href="mailto:darlene@darlenefuchs.com"
