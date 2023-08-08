@@ -39,6 +39,7 @@ export default <Partial<Config>>{
     },
     borderRadius: {
       DEFAULT: "2px",
+      lg: "5px",
       full: "9999px",
     },
     colors: {

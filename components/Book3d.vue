@@ -24,12 +24,7 @@
 
 <style type="css" scoped>
 .book-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  perspective: 600px;
-  margin: 0 auto;
-  min-width: 300px;
+  @apply flex items-center justify-center [perspective:600px] mx-auto min-w-[300px];
 }
 
 @keyframes initAnimation {
@@ -42,12 +37,9 @@
 }
 
 .book {
-  width: 300px;
-  height: 450px;
-  position: relative;
+  @apply w-[300px] h-[450px] relative transition-all duration-1000 ease-in-out;
   transform-style: preserve-3d;
   transform: rotateY(-31deg);
-  transition: 1s ease;
   animation: 1s ease 0s 1 initAnimation;
 }
 
@@ -57,63 +49,21 @@
 }
 
 .book > :first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: red;
-  width: 300px;
-  height: 450px;
+  @apply absolute top-0 left-0 w-[300px] h-[450px] bg-primary rounded-tr-lg rounded-br-lg rounded-tl rounded-bl;
   transform: translateZ(17.5px);
-  background-color: #01060f;
-  border-radius: 0 3px 3px 0;
   box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
 }
 
 .book::before {
-  position: absolute;
+  @apply absolute left-0 top-4 w-[33px] h-[444px] bg-neutral-light;
   content: " ";
-  background-color: blue;
-  left: 0;
-  top: 3px;
-  width: 33px;
-  height: 444px;
   transform: translateX(279.5px) rotateY(90deg);
-  background: linear-gradient(
-    90deg,
-    #fff 0%,
-    #f9f9f9 5%,
-    #fff 10%,
-    #f9f9f9 15%,
-    #fff 20%,
-    #f9f9f9 25%,
-    #fff 30%,
-    #f9f9f9 35%,
-    #fff 40%,
-    #f9f9f9 45%,
-    #fff 50%,
-    #f9f9f9 55%,
-    #fff 60%,
-    #f9f9f9 65%,
-    #fff 70%,
-    #f9f9f9 75%,
-    #fff 80%,
-    #f9f9f9 85%,
-    #fff 90%,
-    #f9f9f9 95%,
-    #fff 100%
-  );
 }
 
 .book::after {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @apply absolute top-0 left-0 w-[300px] h-[450px] bg-primary+2 rounded-tr-lg rounded-br-lg rounded-tl rounded-bl;
   content: " ";
-  width: 300px;
-  height: 450px;
   transform: translateZ(-17.5px);
-  background-color: #01060f;
-  border-radius: 0 3px 3px 0;
   box-shadow: -10px 0 50px 10px rgba(255, 255, 255, 0.1);
 }
 </style>
