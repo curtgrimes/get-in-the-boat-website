@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         families: {
           "Crimson Text": {
             wght: [400, 600, 700],
-            ital: [400, 600, 700],
+            ital: [400, 600],
           },
         },
       },
