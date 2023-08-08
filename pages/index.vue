@@ -9,15 +9,16 @@ const navbarAnchors = useNavbarAnchors();
       <img
         class="absolute -z-10 h-full w-full object-cover opacity-25 mix-blend-luminosity object-top"
         src="~/assets/img/hero-bg.jpg"
+        loading="lazy"
       />
       <Navbar />
       <SectionHero />
     </div>
     <SectionAbout :id="navbarAnchors.About" />
-    <SectionExcerpt :id="navbarAnchors.Excerpt" />
-    <SectionFormats :id="navbarAnchors.Formats" />
-    <SectionAuthor :id="navbarAnchors.Author" />
-    <Footer />
+    <LazySectionExcerpt :id="navbarAnchors.Excerpt" />
+    <LazySectionFormats :id="navbarAnchors.Formats" />
+    <LazySectionAuthor :id="navbarAnchors.Author" />
+    <LazyFooter />
     <NuxtPage />
   </div>
 </template>
