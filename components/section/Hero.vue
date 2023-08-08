@@ -1,7 +1,7 @@
 <template>
   <SectionWrapper class="pt-0 md:pt-24 !pb-0 -mb-24">
     <div class="flex items-center justify-center flex-col md:flex-row">
-      <div class="md:mr-48">
+      <div class="w-full md:mr-48">
         <h1 class="text-3xl lg:text-4xl text-center md:text-left mb-12">
           Get in the Boat
         </h1>
