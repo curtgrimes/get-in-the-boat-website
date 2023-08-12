@@ -9,9 +9,8 @@
     <SectionWrapper class="bg-primary-2 py-80">
       <div class="mx-auto">
         <img
-          src="~/assets/img/darlene-circle.jpg"
-          class="border-b border-b-primary-1 rounded-full shadow-xl max-w-xs float-right ml-48 mb-48 hidden md:block"
-          style="shape-outside: circle()"
+          src="~/assets/img/darlene.jpg"
+          class="border-b border-b-primary-1 rounded-full shadow-xl float-right ml-24 mb-24 hidden md:block object-cover w-[20rem] h-[20rem] [shape-outside:circle()]"
           loading="lazy"
           alt=""
         />
