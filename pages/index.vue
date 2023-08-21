@@ -15,7 +15,9 @@ const navbarAnchors = useNavbarAnchors();
       <SectionHero />
     </div>
     <SectionAbout :id="navbarAnchors.About" />
+    <LazySectionTestimonials1 />
     <LazySectionExcerpt :id="navbarAnchors.Excerpt" />
+    <LazySectionTestimonials2 />
     <LazySectionFormats :id="navbarAnchors.Formats" />
     <LazySectionAuthor :id="navbarAnchors.Author" />
     <LazyFooter />

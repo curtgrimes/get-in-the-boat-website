@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="bg-primary-2 p-24">
+  <div class="bg-primary-2 p-24 rounded-lg">
     <h3 class="h4 text-lg mb-12 flex items-center gap-8">
       <Icon name="mdi:email-open" /> Email Updates
     </h3>
