@@ -2,7 +2,6 @@
   <SectionWrapper>
     <div class="flex flex-col md:flex-row items-end gap-48 mt-120 md:mt-0">
       <div class="md:w-3/5">
-        <!-- md:w-3/5 md:pr-[90px] -->
         <p class="text-lg">
           In "Get In The Boat", Darlene Fuchs shares the powerful and poignant
           story of her father Richard's experience as a caregiver to his wife
