@@ -47,7 +47,7 @@ watch(
       </div>
     </div>
     <cite
-      class="flex items-start gap-16 mt-12 md:mt-24 justify-end flex-col sm:flex-row"
+      class="flex items-start gap-12 mt-12 md:mt-24 justify-end flex-col sm:flex-row"
     >
       <img
         v-if="$props.imagePath"
