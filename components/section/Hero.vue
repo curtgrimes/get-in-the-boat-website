@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { useNow } from "@vueuse/core";
+
+const now = useNow();
+const nowAvailable = computed(() => now.value >= new Date("2023-08-31"));
+</script>
+
 <template>
   <SectionWrapper class="pt-0 md:pt-24 !pb-0 -mb-24">
     <div class="flex items-center justify-center flex-col md:flex-row">
@@ -13,13 +20,18 @@
         <div
           class="flex items-center flex-col md:flex-row justify-center md:justify-start gap-x-24 gap-y-12 flex-wrap"
         >
-          <!-- <NuxtLink class="button button-neutral-light lg:button-lg">
-            Pre-Order Now
-          </NuxtLink> -->
+          <NuxtLink
+            class="button button-neutral-light lg:button-lg"
+            href="https://www.amazon.com/dp/B0CG7CC2VN"
+            target="_blank"
+          >
+            {{ nowAvailable ? "Buy Now" : "Pre-Order Now" }}
+          </NuxtLink>
           <div
+            v-if="!nowAvailable"
             class="rounded-full bg-primary+2 px-16 py-4 lg:py-8 text-sm [text-wrap:balance] text-center max-w-[60vw] mx-auto sm:max-w-[initial] sm:mx-[initial]"
           >
-            Pre-orders available starting September 2023
+            Available August 31, 2023
           </div>
         </div>
       </div>
