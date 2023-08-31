@@ -1,9 +1,4 @@
-<script setup lang="ts">
-import { useNow } from "@vueuse/core";
-
-const now = useNow();
-const nowAvailable = computed(() => now.value >= new Date("2023-08-31"));
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <SectionWrapper class="pt-0 md:pt-24 !pb-0 -mb-24">
@@ -25,14 +20,19 @@ const nowAvailable = computed(() => now.value >= new Date("2023-08-31"));
             href="https://www.amazon.com/dp/B0CG7CC2VN"
             target="_blank"
           >
-            {{ nowAvailable ? "Buy Now" : "Pre-Order Now" }}
+            Buy Now
           </NuxtLink>
-          <div
-            v-if="!nowAvailable"
-            class="rounded-full bg-primary+2 px-16 py-4 lg:py-8 text-sm [text-wrap:balance] text-center max-w-[60vw] mx-auto sm:max-w-[initial] sm:mx-[initial]"
+          <a
+            href="#formats"
+            class="rounded-full bg-primary+2 px-16 py-4 lg:py-8 text-sm [text-wrap:balance] text-center max-w-[60vw] mx-auto sm:mx-[initial] flex items-center no-underline !text-neutral-light hover:bg-primary+1"
           >
-            Available August 31, 2023
-          </div>
+            Available on Kindle, Paperback, and Hardcover Author's Edition
+            <Icon
+              name="material-symbols:info"
+              size="1.5rem"
+              class="ml-8 -my-3 -mr-8 shrink-0"
+            />
+          </a>
         </div>
       </div>
       <div class="md:-mb-48 -mb-80">
